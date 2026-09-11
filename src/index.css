@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  @apply transition-colors duration-300;
+}
+
+body {
+  @apply font-sans text-gray-900;
+}
+
+.btn {
+  @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+}
+
+.btn-primary {
+  @apply btn bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply btn bg-gray-200 text-gray-900 hover:bg-gray-300;
+}
+
+.btn-outline {
+  @apply btn border-2 border-blue-600 text-blue-600 hover:bg-blue-50;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl hover:scale-105;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4;
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-600 mb-12;
+}
